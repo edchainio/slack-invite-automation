@@ -6,10 +6,10 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input
 html,body{
 margin:0;
 padding:0;
-font-family: 'Open Sans', sans-serif;
+font-family: 'Oswald', sans-serif;
 /*background: #fff url(../images/bg.jpg) center top no-repeat; */
 background-color:#67a2dc;
-
+color:white;
 background-size: cover;
 height: 100%;
 width: 100%;
@@ -42,8 +42,7 @@ float: left;
 
 
 h1{
-font-family: 'Open Sans', sans-serif;
-color: #000000;
+font-family: 'Oswald', sans-serif;
 text-align: center;
 font-size: 50px;
 font-weight: 300;
@@ -60,7 +59,7 @@ h2{
 	text-align: center;
 	font-weight: 300;
 	font-size: 20px;
-		color: #000000;
+		
 
 }
 
@@ -79,12 +78,12 @@ margin: 0 auto;
 h3{
 font-size: 28px;
 font-weight: 600;
-color: #000000;
+
 }
 
 .information p{
 font-size: 16px;
-color: #000000;
+
 display: block;
 }
 
@@ -95,14 +94,14 @@ margin-top: 20px;
 }
 
 .field{
-background: url(../images/field.png) repeat;
+/*background: url(../images/field.png) repeat;*/
 width: 448px;
 -webkit-border-radius: 30px;-moz-border-radius: 30px;border-radius: 30px;
 border: none;
 font-style: italic;
 font-family: 'Lato', sans-serif;
 font-size: 16px;
-color: #000000;
+
 padding: 15px;
 margin-bottom: 15px;
 outline: none;
@@ -132,8 +131,9 @@ right: 15px;
 top: 13px;
 padding: 3px 10px;
 -webkit-border-radius: 30px;-moz-border-radius: 30px;border-radius: 30px;
-background: #ffffff;
+background: #005438;
 border: none;
+color:#fff;
 font-family: 'Lato', sans-serif;
 font-size: 14px;
 font-weight: bold;
@@ -142,7 +142,7 @@ cursor: pointer;
 
 
 .submit:hover{
-background: #eeeeee;
+background: #000;
 }
 
 .error {
@@ -152,7 +152,7 @@ background: #eeeeee;
 }
 
 a {
-  color: #92BCF2;
+  color: #ffffff;
   font-weight: 700;
 }
 

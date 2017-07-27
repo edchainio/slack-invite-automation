@@ -1,0 +1,12 @@
+function template(locals) {
+var buf = [];
+var jade_mixins = {};
+var jade_interp;
+;var locals_for_with = (locals || {});(function (__, community, tokenRequired) {
+buf.push("<!DOCTYPE html><html><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><title>" + (jade.escape((jade_interp = __('TITLE', community)) == null ? '' : jade_interp)) + "</title><link href=\"css/style.css\" rel=\"stylesheet\" type=\"text/css\"><link href=\"//fonts.googleapis.com/css?family=Lato:300,400,700,900,700italic|Open+Sans:700italic,400,600,300,700,800\" rel=\"stylesheet\" type=\"text/css\"><link href=\"//fonts.googleapis.com/css?family=Oswald\" rel=\"stylesheet\" type=\"text/css\"></head><body><div id=\"wrapper\"><div class=\"main\"><div class=\"header\"><h1><strong>" + (jade.escape((jade_interp = community) == null ? '' : jade_interp)) + "</strong></h1><h2>" + (jade.escape((jade_interp = __('HEADER', community)) == null ? '' : jade_interp)) + "</h2></div><div class=\"content\"><div class=\"information\"><form method=\"POST\" action=\"/invite\" id=\"join-form\" class=\"form\"><input type=\"email\" name=\"email\" autofocus" + (jade.attr("placeholder", "" + (__('ENTER_EMAIL')) + "", true, true)) + " id=\"slack-email\" class=\"field\">");
+if ( tokenRequired)
+{
+buf.push("<input type=\"text\" name=\"token\"" + (jade.attr("placeholder", "" + (__('ENTER_TOKEN')) + "", true, true)) + " id=\"slack-token\" class=\"field\">");
+}
+buf.push("<input type=\"submit\" value=\"Join\" class=\"submit\"></form></div></div></div></div><script>var tokenRequired = " + (jade.escape((jade_interp = tokenRequired) == null ? '' : jade_interp)) + ";\nvar form = document.getElementById('join-form');\nvar email = document.getElementById('slack-email');\nvar token = document.getElementById('slack-token');\nform.addEventListener('submit', function(evt) {\n  if (!email.value) {\n    evt.preventDefault();\n  }\n  if (tokenRequired && !token.value) {\n    evt.preventDefault();\n  }\n});</script></body></html>");}.call(this,"__" in locals_for_with?locals_for_with.__:typeof __!=="undefined"?__:undefined,"community" in locals_for_with?locals_for_with.community:typeof community!=="undefined"?community:undefined,"tokenRequired" in locals_for_with?locals_for_with.tokenRequired:typeof tokenRequired!=="undefined"?tokenRequired:undefined));;return buf.join("");
+}
