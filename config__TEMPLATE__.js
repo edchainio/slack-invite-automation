@@ -1,3 +1,7 @@
+// configure.js
+// This is the template file for configure.js
+// Just copy this file and remove __TEMPLATE__ from the file name.
+
 module.exports = {
   // your community or team name to display on join page.
   community: process.env.COMMUNITY_NAME || 'YOUR-TEAM-NAME',
